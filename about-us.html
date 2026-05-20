@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon" />
+    <meta content="images/logo.webp" property="og:image" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header _section-1">
+        <div class="header__inner">
+          <a href="/" class="logo">
+            <img src="images/logo.webp" alt="" class="logo-img">
+          </a>
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav-item">
+                <a href="/" class="nav__link _link _link-padding">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="/numbers.html" class="nav__link _link _link-padding">Номера</a>
+              </li>
+              <li class="nav__item">
+                <a href="/services-page.html" class="nav__link _link _link-padding">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="/about-us.html" class="nav__link _link _link-padding">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="/contacts-page.html" class="nav__link _link _link-padding">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__contacts">
+              <a href="tel:+79953831616" class="header__tel _link _link-padding"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 4C20 1.8 18.2 0 16 0H8C5.8 0 4 1.8 4 4V20C4 22.2 5.8 24 8 24H16C18.2 24 20 22.2 20 20V4ZM13 22H11C10.4 22 10 21.6 10 21C10 20.4 10.4 20 11 20H13C13.6 20 14 20.4 14 21C14 21.6 13.6 22 13 22ZM18 17C18 17.6 17.6 18 17 18H7C6.4 18 6 17.6 6 17V5C6 4.4 6.4 4 7 4H17C17.6 4 18 4.4 18 5V17Z" fill="#1A3A27"/>
+</svg>
+ +7 995 383 16 16</a>
+              <a href="#form-top" data-fancybox class="header__button _btn _btn-primary _btn-normal">ЗАБРОНИРОВАТЬ</a>
+            </div>
+            <div class="burger _btn _btn-primary">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-menu _bg">
+    <div class="mobile-menu__top">
+        <p class="mobile-menu__top-text">МЕНЮ</p>
+        <button class="mobile-menu__close _btn _btn-secondary  _arrow-medium"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+    </div>
+    <div class="mobile-menu__bar">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__item">
+                <a href="/" class="mobile-menu__item-link _link _link-no-padding">Главная</a>
+            </div>
+    
+            <div class="mobile-menu__item">
+                <a href="/numbers.html" class="mobile-menu__item-link _link _link-no-padding">Номера</a>
+            </div>
+    
+            <div class="mobile-menu__item">
+                <a href="/services-page.html" class="mobile-menu__item-link _link _link-no-padding">Услуги</a>
+            </div>
+    
+            <div class="mobile-menu__item">
+                <a href="/about-us.html" class="mobile-menu__item-link _link _link-no-padding">О нас</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a href="/contacts-page.html" class="mobile-menu__item-link _link _link-no-padding">Контакты</a>
+            </div>
+        </div>
+        <div class="mobile-menu__contacts header__contacts">
+                <a href="tel:+79953831616" class="mobile-menu__tel _link _link-padding"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 4C20 1.8 18.2 0 16 0H8C5.8 0 4 1.8 4 4V20C4 22.2 5.8 24 8 24H16C18.2 24 20 22.2 20 20V4ZM13 22H11C10.4 22 10 21.6 10 21C10 20.4 10.4 20 11 20H13C13.6 20 14 20.4 14 21C14 21.6 13.6 22 13 22ZM18 17C18 17.6 17.6 18 17 18H7C6.4 18 6 17.6 6 17V5C6 4.4 6.4 4 7 4H17C17.6 4 18 4.4 18 5V17Z" fill="#1A3A27"/>
+</svg>
+ +7 995 383 16 16</a>
+                <a href="#" class="mobile-menu__button _btn _btn-primary _btn-normal">ЗАБРОНИРОВАТЬ</a>
+            </div>
+    </div>
+</div>
+<div class="menu-overlay"></div>
+    </header>
+<main class="main">
+<section class="about-us-top _section-1 ">
+    <div class="container">
+        <div class="about-us-top__inner">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="/numbers.html" class="breadcrumbs__link">О нас</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+            <h1 class="about-us-top__title _title-2">О нашем глэмпинге BriVillage</h1>
+        </div>
+    </div>
+</section>
+<section class="about-us-desc _section-1 _block-mt">
+    <div class="container">
+        <div class="about-us-desc__inner">
+            <div class="about-us-desc__text">
+                <p>Согласно мнению известных философов, реальная власть непредвзято создает данный даосизм. Гений преобразует сложный здравый смысл. Надо сказать, что исчисление предикатов транспонирует структурализм. Созерцание философски понимает под собой конфликт. Отсюда естественно следует, что адаптация рассматривается позитивизм. Язык образов понимает под собой трансцендентальный гедонизм.</p>
+                <p>Апостериори, дедуктивный метод философски понимает под собой неоднозначный закон внешнего мира. Мир не так уж очевиден. Можно предположить, что позитивизм транспонирует из ряда вон выходящий даосизм. Надстройка, как следует из вышесказанного, рассматривается бабувизм.</p>
+            </div>
+            <div class="about-us-desc__img _block-mt">
+                <div class="about-us-desc__pict">
+                    <img src="images/about-us-desc-1.webp" alt="" class="_image">
+                </div>
+                <span class="about-us-desc__description">Панорамное фото территории глэмпинга</span>
+            </div>
+            <div class="about-us-desc__text _block-mt">
+                <p>Аксиома силлогизма творит конфликт, отрицая очевидное. Интересно отметить, что свобода представляет собой типичный принцип восприятия. Вероятностная логика категорически дискредитирует субъективный гедонизм. Искусство решительно заполняет примитивный интеллект. Дуализм непредвзято преобразует конфликт. Освобождение, как следует из вышесказанного, непредсказуемо.</p>
+                <p>Дуализм, как принято считать, естественно принимает во внимание мир, учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения. Закон внешнего мира решительно представляет собой субъективный даосизм. Жизнь, конечно, осмысляет</p>
+            </div>
+            <div class="about-us-desc__swiper swiper _block-mt">
+                <div class="about-us-desc__swiper-wrapper swiper-wrapper">
+                    <div class="about-us-desc__swiper-slide swiper-slide">
+                        <img src="images/about-us-desc-2.webp" alt="" class="about-us-desc__image _img">
+                    </div>
+                    <div class="about-us-desc__swiper-slide swiper-slide _section-1">
+                        <img src="images/about-us-desc-1.webp" alt="" class="about-us-desc__image _img">
+                    </div>
+                    <div class="about-us-desc__swiper-slide swiper-slide _section-1">
+                        <img src="images/about-us-desc-2.webp" alt="" class="about-us-desc__image _img">
+                    </div>
+                </div>
+                <div class="about-us-desc__swiper-pagination swiper-pagination _pagination-btn"></div>
+                <div class="about-us-desc__swiper-button swiper-button">
+                    <div class="about-us-desc__swiper-button-next swiper-button-next _btn _btn-secondary _btn-stroke _btn-secondary-stroke _arrow-normal"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12H19" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5L19 12L12 19" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span></div>
+                    <div class="about-us-desc__swiper-button-prev swiper-button-prev _btn _btn-secondary _btn-stroke _btn-secondary-stroke _arrow-normal"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 12H5" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 19L5 12L12 5" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span></div>
+                </div>
+            </div>
+            <span class="about-us-desc__description _block-mt">Фотографии глэмпинга (снаружи и внутри домиков)</span>
+            <h2 class="about-us-desc__title title-3 _block-mt">О нашем глэмпинге<br> BriVillage</h2>
+            <div class="about-us-desc__text">
+                <p>Аксиома силлогизма творит конфликт, отрицая очевидное. Интересно отметить, что свобода представляет собой типичный принцип восприятия. Вероятностная логика категорически дискредитирует субъективный гедонизм. Искусство решительно заполняет примитивный интеллект. Дуализм непредвзято преобразует конфликт. Освобождение, как следует из вышесказанного, непредсказуемо.</p>
+                <p>Дуализм, как принято считать, естественно принимает во внимание мир, учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения. Закон внешнего мира решительно представляет собой субъективный даосизм. Жизнь, конечно, осмысляет дуализм.</p>
+            </div>
+            <div class="about-us-desc__video _block-mt">
+                <div class="about-us-desc__video-pict video-xl">
+                    <img src="images/about-us-desc-3.webp" alt="" class="_img">
+                    <a href="https://rutube.ru/play/embed/0914b40e41daab0cb10a33e3a8c027ff/" data-fancybox data-type="iframe" data-width="800" data-height="450" class="play-btn">
+                        <div class="play _btn _btn-secondary">
+    <span class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 5.72318V18.2768C6 19.0446 6.82948 19.526 7.49614 19.1451L18.4806 12.8682C19.1524 12.4843 19.1524 11.5157 18.4806 11.1318L7.49614 4.85494C6.82948 4.47399 6 4.95536 6 5.72318Z" stroke="#3B9254" stroke-width="2"/>
+</svg>
+</span>
+</div>
+                    </a>
+                </div>
+                <span class="about-us-desc__description">Обустройство домиков в глэмпинге</span>
+            </div>
+            <div class="about-us-desc__text _block-mt">
+                <p>Аксиома силлогизма творит конфликт, отрицая очевидное. Интересно отметить, что свобода представляет собой типичный принцип восприятия. Вероятностная логика категорически дискредитирует субъективный гедонизм. Искусство решительно заполняет примитивный интеллект. Дуализм непредвзято преобразует конфликт. Освобождение, как следует из вышесказанного, непредсказуемо.</p>
+                <p>Дуализм, как принято считать, естественно принимает во внимание мир, учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения. Закон внешнего мира решительно представляет собой субъективный даосизм. Жизнь, конечно, осмысляет дуализм.</p>
+            </div>
+            <h2 class="about-us-desc__title title-3 _block-mt">История создания</h2>
+            <div class="about-us-desc__text">
+                <p>Дедуктивный метод, конечно, не так уж очевиден. Язык образов, как следует из вышесказанного, ментально принимает во внимание сенсибельный принцип восприятия. Адаптация, конечно, индуцирует естественный здравый смысл. Мир контролирует интеллигибельный даосизм. Идеи гедонизма занимают центральное место в утилитаризме Милля и Бентама, однако концепция рассматривается из ряда вон выходящий закон внешнего мира.</p>
+            </div>
+            <div class="about-us-desc__video _block-mt">
+                <div class="about-us-desc__video-pict video-md">
+                    <img src="images/about-us-desc-4.webp" alt="" class="_img">
+                    <a href="https://rutube.ru/play/embed/0914b40e41daab0cb10a33e3a8c027ff/" data-fancybox data-type="iframe" data-width="800" data-height="450" class="play-btn">
+                        <div class="play _btn _btn-secondary">
+    <span class="play-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 5.72318V18.2768C6 19.0446 6.82948 19.526 7.49614 19.1451L18.4806 12.8682C19.1524 12.4843 19.1524 11.5157 18.4806 11.1318L7.49614 4.85494C6.82948 4.47399 6 4.95536 6 5.72318Z" stroke="#3B9254" stroke-width="2"/>
+</svg>
+</span>
+</div>
+                    </a>
+                </div>
+            </div>
+            <span class="about-us-desc__description">Обустройство домиков в глэмпинге</span>
+            <div class="about-us-desc__text _block-mt">
+                <p>Сомнение амбивалентно. Гносеология порождена временем. Платоновская академия философски порождает и обеспечивает позитивизм, tertium nоn datur. Даосизм амбивалентно выводит субъективный принцип восприятия. Ощущение мира, как принято считать, трогательно наивно.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form-bottom _section-1 _section-mt">
+    <div class="container">
+        <div class="form-bottom__inner">
+            <h2 class="form-bottom__title _title-3">Забронировать домик</h2>
+            <form action="#" class="form-bottom__form">
+                <label class="form-bottom__label">
+                    <input type="text" class="_input _input-large" placeholder="Как вас зовут?">
+                </label>
+                <label class="form-bottom__label">
+                    <input type="tel" class="_input _input-large" placeholder="+7 (999) 999 99 99">
+                </label>
+                <button type="submit" class="form-bottom__button _btn _btn-normal _btn-primary">Забронировать</button>
+                <span class="form-bottom__privaty">Оставляя заявку Вы принимаете условия <br> <a href="#!">соглашения</a> об обработке персональных данных</span>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="consultation _section-1 _section-mt">
+    <div class="container">
+        <div class="consultation__inner">
+            <div class="consultation__img">
+                <img src="images/consultation-img.webp" alt="" class="_image">
+            </div>
+            <h2 class="consultation__title _title-3">Поможем с выбором и<br> проконсультируем по всем<br> вопросам</h2>
+            <a href="#form-bottom" data-fancybox class="consultation__button _btn _btn-secondary _btn-large">Забронировать</a>
+        </div>
+    </div>
+</section>
+<section class="about-alternative _section-1 _section-mt">
+    <div class="container">
+        <div class="about-alternative__inner">
+            <div class="about__text">
+                <h2 class="about-alternative__title _title-2">О нашем глэмпинге<br> BriVillage</h2>
+                <div class="about__description">
+                    <p>Bri Village - это уютный глэмпинг, расположенный в экологически чистом районе недалеко от Казани. Мы предлагаем незабываемый отдых в комфортабельных домиках среди живописных лесов и озер. Наш глэмпинг идеально подходит для тех, кто хочет насладиться природой, не отказываясь от удобств современной жизни.</p>
+                    <p>Мы гарантируем экологически чистый район, где вы сможете <br> насладиться свежим воздухом и красотой природы. Наши комфортабельные домики оборудованы всем необходимым для приятного проживания.</p>
+                </div>
+            </div>
+            <div class="about-alternative__image">
+                <img src="images/about-alternative-img.webp" alt="" class="_image">
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer _section-1">
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <div class="logo">
+          <a href="/" class="logo">
+            <img src="images/logo.webp" alt="" class="logo-img">
+          </a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__name">Карта сайта</p>
+          <ul class="footer__pages">
+            <li class="footer__nav-item">
+              <a href="/" class="footer__nav-link _link" target="_blank">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="/numbers.html" class="footer__nav-link _link" target="_blank">Номера</a>
+            </li>
+            <li class="nav__item">
+              <a href="/services-page.html" class="footer__nav-link _link" target="_blank">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="/about-us.html" class="footer__nav-link _link" target="_blank">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contacts-page.html" class="footer__nav-link _link" target="_blank">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p class="footer__name">Администрация Bri Village</p>
+          <ul class="footer__list">
+            <li class="footer__nav-item">
+              <span class="footer__nav-item-title"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7993_548)">
+<path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_7993_548">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</span>Адрес BriVillage</span>
+              <a href="#!" class="footer__nav-item--title-desc _link">c.Бритвино, Зеленодольский район, Республика Татарстан</a>
+            </li>
+            <li class="footer__nav-item">
+              <span class="footer__nav-item-title"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 4C20 1.8 18.2 0 16 0H8C5.8 0 4 1.8 4 4V20C4 22.2 5.8 24 8 24H16C18.2 24 20 22.2 20 20V4ZM13 22H11C10.4 22 10 21.6 10 21C10 20.4 10.4 20 11 20H13C13.6 20 14 20.4 14 21C14 21.6 13.6 22 13 22ZM18 17C18 17.6 17.6 18 17 18H7C6.4 18 6 17.6 6 17V5C6 4.4 6.4 4 7 4H17C17.6 4 18 4.4 18 5V17Z" fill="#3B9254"/>
+</svg>
+</span>Телефон для связи</span>
+              <a href="tel:+79953831616" class="nav-item__desc _link">+7 995 383 16 16</a>
+            </li>
+            <li class="footer__nav-item">
+              <span class="footer__nav-item-title"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 6L12 13L2 6" stroke="#3B9254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>Email для связи</span>
+              <a href="mailto:bri.village@mail.ru" class="nav-item__desc _link">bri.village@mail.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p class="footer__name">Социальные сети</p>
+          <ul class="footer__links">
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.3749 7.31846C6.74359 4.91938 10.3236 3.33777 12.1148 2.57361C17.2292 0.391776 18.2919 0.0127698 18.9846 0.00012133C19.1369 -0.00249777 19.4776 0.0362266 19.6982 0.219862C19.8845 0.37492 19.9358 0.584381 19.9603 0.731393C19.9848 0.878405 20.0154 1.2133 19.9911 1.47498C19.714 4.46174 18.5147 11.7098 17.9046 15.055C17.6465 16.4705 17.1382 16.9451 16.6461 16.9916C15.5766 17.0925 14.7645 16.2667 13.7287 15.5702C12.1078 14.4805 11.1921 13.8021 9.61879 12.7387C7.80053 11.5097 8.97923 10.8343 10.0154 9.73042C10.2866 9.44153 14.9987 5.04555 15.0899 4.64677C15.1013 4.59689 15.1119 4.41098 15.0042 4.31282C14.8965 4.21465 14.7376 4.24822 14.6229 4.27492C14.4604 4.31276 11.871 6.06814 6.85486 9.54107C6.11988 10.0587 5.45416 10.3109 4.8577 10.2977C4.20015 10.2831 2.93528 9.91638 1.99498 9.60288C0.84166 9.21836 -0.074973 9.01506 0.00484519 8.36203C0.0464194 8.0219 0.503103 7.67404 1.3749 7.31846Z" fill="url(#paint0_linear_8129_527)" />
+  <defs>
+    <linearGradient id="paint0_linear_8129_527" x1="10" y1="0" x2="10" y2="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37AFE3" />
+      <stop offset="1" stop-color="#1E94D3" />
+    </linearGradient>
+  </defs>
+</svg></span>Telegram</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 4.875C17.125 3 14.625 2 12 2C6.5 2 2 6.5 2 12C2 13.75 2.50001 15.5 3.37501 17L2 22L7.25002 20.625C8.75002 21.375 10.375 21.875 12 21.875C17.5 21.875 22 17.375 22 11.875C22 9.25 20.875 6.75 19 4.875ZM12 20.25C10.5 20.25 9.00001 19.875 7.75001 19.125L7.49999 19L4.37499 19.875L5.25001 16.875L4.99999 16.5C4.12499 15.125 3.74999 13.625 3.74999 12.125C3.74999 7.625 7.5 3.875 12 3.875C14.25 3.875 16.25 4.75 17.875 6.25C19.5 7.875 20.25 9.875 20.25 12.125C20.25 16.5 16.625 20.25 12 20.25ZM16.5 14C16.25 13.875 15 13.25 14.75 13.25C14.5 13.125 14.375 13.125 14.25 13.375C14.125 13.625 13.625 14.125 13.5 14.375C13.375 14.5 13.25 14.5 13 14.5C12.75 14.375 12 14.125 11 13.25C10.25 12.625 9.75001 11.75 9.62501 11.5C9.50001 11.25 9.62502 11.125 9.75002 11C9.87502 10.875 10 10.75 10.125 10.625C10.25 10.5 10.25 10.375 10.375 10.25C10.5 10.125 10.375 10 10.375 9.875C10.375 9.75 9.87501 8.5 9.62501 8C9.50001 7.625 9.25002 7.625 9.12502 7.625C9.00002 7.625 8.87498 7.625 8.62498 7.625C8.49998 7.625 8.24998 7.625 7.99998 7.875C7.74998 8.125 7.12501 8.75 7.12501 10C7.12501 11.25 7.99999 12.375 8.12499 12.625C8.24999 12.75 9.87498 15.375 12.375 16.375C14.5 17.25 14.875 17 15.375 17C15.875 17 16.875 16.375 17 15.875C17.25 15.25 17.25 14.75 17.125 14.75C17 14.125 16.75 14.125 16.5 14Z" fill="url(#paint0_linear_7993_530)"/>
+<defs>
+<linearGradient id="paint0_linear_7993_530" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#57D163"/>
+<stop offset="1" stop-color="#23B33A"/>
+</linearGradient>
+</defs>
+</svg>
+</span>Whatsapp</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.1954 17.999H19.0065C18.1783 17.999 17.9288 17.3216 16.4443 15.8212C15.1469 14.5584 14.5989 14.4014 14.2707 14.4014C13.8168 14.4014 13.693 14.5274 13.693 15.1583V17.1471C13.693 17.685 13.5203 18 12.1288 18C10.7789 17.9084 9.46987 17.4942 8.3095 16.7916C7.14913 16.0889 6.17065 15.1179 5.45465 13.9584C3.75457 11.8214 2.57166 9.31315 2 6.63323C2 6.30177 2.12475 6.00132 2.75043 6.00132H4.93837C5.50071 6.00132 5.70319 6.25428 5.92391 6.8387C6.98621 9.99635 8.79894 12.7431 9.53498 12.7431C9.81711 12.7431 9.93994 12.6171 9.93994 11.9066V8.65401C9.84685 7.17017 9.06668 7.04514 9.06668 6.50821C9.07655 6.36655 9.14071 6.23436 9.24553 6.13971C9.35035 6.04506 9.48758 5.99542 9.62806 6.00132H13.0674C13.5376 6.00132 13.693 6.2378 13.693 6.80575V11.1962C13.693 11.6702 13.8946 11.8272 14.0366 11.8272C14.3187 11.8272 14.5356 11.6702 15.0528 11.1487C16.1615 9.78312 17.0673 8.26165 17.7417 6.63226C17.8107 6.43663 17.9412 6.26918 18.1133 6.15543C18.2853 6.04169 18.4895 5.98791 18.6946 6.00228H20.8835C21.5399 6.00228 21.679 6.33375 21.5399 6.80672C20.7438 8.6079 19.7587 10.3176 18.6015 11.9066C18.3654 12.2701 18.2714 12.4591 18.6015 12.8855C18.8184 13.217 19.5861 13.8644 20.1014 14.4799C20.8518 15.2358 21.4746 16.1101 21.9458 17.0676C22.1339 17.684 21.8201 17.999 21.1954 17.999Z" fill="#0077FF"/>
+</svg>
+</span>VK</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.87727 2.06C8.94364 2.01091 9.28364 2 12 2C14.7164 2 15.0564 2.01182 16.1218 2.06C17.1873 2.10818 17.9145 2.27818 18.5509 2.52455C19.2173 2.77636 19.8218 3.17 20.3218 3.67909C20.8309 4.17818 21.2236 4.78182 21.4745 5.44909C21.7218 6.08545 21.8909 6.81273 21.94 7.87636C21.9891 8.94455 22 9.28455 22 12C22 14.7164 21.9882 15.0564 21.94 16.1227C21.8918 17.1864 21.7218 17.9136 21.4745 18.55C21.2236 19.2174 20.8303 19.822 20.3218 20.3218C19.8218 20.8309 19.2173 21.2236 18.5509 21.4745C17.9145 21.7218 17.1873 21.8909 16.1236 21.94C15.0564 21.9891 14.7164 22 12 22C9.28364 22 8.94364 21.9882 7.87727 21.94C6.81364 21.8918 6.08636 21.7218 5.45 21.4745C4.78266 21.2236 4.17802 20.8302 3.67818 20.3218C3.16944 19.8224 2.77574 19.2181 2.52455 18.5509C2.27818 17.9145 2.10909 17.1873 2.06 16.1236C2.01091 15.0555 2 14.7155 2 12C2 9.28364 2.01182 8.94364 2.06 7.87818C2.10818 6.81273 2.27818 6.08545 2.52455 5.44909C2.77611 4.78189 3.17011 4.17756 3.67909 3.67818C4.17822 3.16955 4.78225 2.77586 5.44909 2.52455C6.08545 2.27818 6.81364 2.10909 7.87727 2.06ZM16.0409 3.86C14.9864 3.81182 14.67 3.80182 12 3.80182C9.33 3.80182 9.01364 3.81182 7.95909 3.86C6.98364 3.90455 6.45455 4.06727 6.10182 4.20455C5.63545 4.38636 5.30182 4.60182 4.95182 4.95182C4.62004 5.27459 4.36471 5.66753 4.20455 6.10182C4.06727 6.45455 3.90455 6.98364 3.86 7.95909C3.81182 9.01364 3.80182 9.33 3.80182 12C3.80182 14.67 3.81182 14.9864 3.86 16.0409C3.90455 17.0164 4.06727 17.5455 4.20455 17.8982C4.36455 18.3318 4.62 18.7255 4.95182 19.0482C5.27455 19.38 5.66818 19.6355 6.10182 19.7955C6.45455 19.9327 6.98364 20.0955 7.95909 20.14C9.01364 20.1882 9.32909 20.1982 12 20.1982C14.6709 20.1982 14.9864 20.1882 16.0409 20.14C17.0164 20.0955 17.5455 19.9327 17.8982 19.7955C18.3645 19.6136 18.6982 19.3982 19.0482 19.0482C19.38 18.7255 19.6355 18.3318 19.7955 17.8982C19.9327 17.5455 20.0955 17.0164 20.14 16.0409C20.1882 14.9864 20.1982 14.67 20.1982 12C20.1982 9.33 20.1882 9.01364 20.14 7.95909C20.0955 6.98364 19.9327 6.45455 19.7955 6.10182C19.6136 5.63545 19.3982 5.30182 19.0482 4.95182C18.7254 4.62006 18.3325 4.36474 17.8982 4.20455C17.5455 4.06727 17.0164 3.90455 16.0409 3.86ZM10.7227 15.0827C11.4361 15.3797 12.2303 15.4197 12.9699 15.1961C13.7095 14.9725 14.3485 14.499 14.7778 13.8566C15.2071 13.2142 15.4001 12.4426 15.3237 11.6737C15.2473 10.9049 14.9064 10.1863 14.3591 9.64091C14.0102 9.29225 13.5884 9.02528 13.1239 8.85922C12.6595 8.69317 12.164 8.63215 11.6732 8.68056C11.1823 8.72897 10.7083 8.88562 10.2853 9.13921C9.86223 9.3928 9.50068 9.73704 9.22664 10.1471C8.9526 10.5572 8.7729 11.023 8.70047 11.5109C8.62804 11.9988 8.66468 12.4966 8.80776 12.9687C8.95084 13.4407 9.1968 13.8751 9.52793 14.2407C9.85906 14.6062 10.2671 14.8938 10.7227 15.0827ZM8.36545 8.36545C8.84275 7.88816 9.40938 7.50955 10.033 7.25124C10.6566 6.99293 11.325 6.85998 12 6.85998C12.675 6.85998 13.3434 6.99293 13.967 7.25124C14.5906 7.50955 15.1573 7.88816 15.6345 8.36545C16.1118 8.84275 16.4905 9.40938 16.7488 10.033C17.0071 10.6566 17.14 11.325 17.14 12C17.14 12.675 17.0071 13.3434 16.7488 13.967C16.4905 14.5906 16.1118 15.1573 15.6345 15.6345C14.6706 16.5985 13.3632 17.14 12 17.14C10.6368 17.14 9.3294 16.5985 8.36545 15.6345C7.40151 14.6706 6.85998 13.3632 6.85998 12C6.85998 10.6368 7.40151 9.3294 8.36545 8.36545ZM18.28 7.62545C18.3983 7.51388 18.493 7.37971 18.5585 7.23089C18.624 7.08206 18.6589 6.92161 18.6613 6.75903C18.6637 6.59645 18.6334 6.43504 18.5723 6.28437C18.5111 6.1337 18.4204 5.99683 18.3054 5.88185C18.1904 5.76688 18.0536 5.67614 17.9029 5.61502C17.7522 5.55389 17.5908 5.52361 17.4282 5.52598C17.2657 5.52835 17.1052 5.56332 16.9564 5.62882C16.8076 5.69431 16.6734 5.789 16.5618 5.90727C16.3448 6.1373 16.226 6.44284 16.2306 6.75903C16.2352 7.07522 16.3629 7.37716 16.5865 7.60077C16.8101 7.82437 17.1121 7.95203 17.4282 7.95664C17.7444 7.96125 18.05 7.84245 18.28 7.62545Z" fill="url(#paint0_linear_7993_538)"/>
+<defs>
+<linearGradient id="paint0_linear_7993_538" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="#046BE3"/>
+<stop offset="0.130208" stop-color="#D726BB"/>
+<stop offset="0.463542" stop-color="#FF0474"/>
+<stop offset="0.739583" stop-color="#FE7C01"/>
+<stop offset="1" stop-color="#FFD169"/>
+</linearGradient>
+</defs>
+</svg>
+</span>Instagram *</a>
+              <p class="footer__nav-item-text">* Запрещенная на территории Российской Федерации организация</p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__copypaste">
+        <p class="footer__copypaste-text">© BriVillage 2023. Все права защищены. Любое копирование информации <br>возможно только с согласия правообладателя ресурса.</p>
+        <div class="footer__copypaste-links">
+          <a href="#!" target="_blank">Договор оферты</a>
+          <a href="#!" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="form-top" class="form-top__inner _section-1">
+    <h3 class="form-top__title">Забронировать домик</h3>
+    <form class="form-top__form">
+        <label class="form-top__label _calendar-label">
+            <span class="form-top__label-text">Заезд</span>
+            <span class="form-top__label-wrapper">
+                <input type="text" class="form-top__label-input _input _calendar" placeholder="22.10.2023">
+                <span class="form-top__icon _icon-black _icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.6489 3.95483H17.3156V3.02142C17.3156 2.46631 16.8613 2.01221 16.3062 2.01221C15.7511 2.01221 15.2972 2.46631 15.2972 3.02142V3.95483H8.70321V3.02142C8.70321 2.46631 8.24911 2.01221 7.694 2.01221C7.13889 2.01221 6.68479 2.46631 6.68479 3.02142V3.95483H4.35144C3.3961 3.95483 2.61877 4.73198 2.61877 5.68731V18.4854C2.61877 19.4407 3.39593 20.2178 4.35144 20.2178H18.1008C19.91 20.2178 21.3814 18.7464 21.3814 16.9373V5.68731C21.3814 4.73198 20.6043 3.95483 19.6489 3.95483ZM4.35144 5.33612H6.686C6.69929 5.87983 7.14718 6.32064 7.694 6.32064C8.24064 6.32064 8.68836 5.87983 8.70182 5.33612H15.2984C15.3118 5.87983 15.7594 6.32064 16.3062 6.32064C16.853 6.32064 17.3009 5.87983 17.3144 5.33612H19.6489C19.8396 5.33612 20.0001 5.49704 20.0001 5.68731V8.38498H4.00007V5.68731C4.00007 5.49687 4.16099 5.33612 4.35144 5.33612ZM4.00007 18.4854V9.7447H20.0001V15.7986H17.1776L17.1569 18.8366H4.35144C4.16099 18.8366 4.00007 18.6756 4.00007 18.4854ZM18.5387 18.7835L18.5498 17.1799H19.9827C19.8817 17.9669 19.2984 18.6033 18.5387 18.7835Z" fill="white"/>
+<path d="M8.02724 13.0049C8.03414 12.3721 8.25981 11.9094 8.62206 11.6009C8.98448 11.2999 9.47691 11.1533 10.0101 11.1533C11.3912 11.1533 11.8493 12.0793 11.8493 12.5343C11.8493 13.6607 11.2201 13.6607 11.2201 13.6839V13.6992C11.2201 13.761 11.9995 13.761 11.9995 14.9569C11.9995 15.6127 11.562 16.6464 10.003 16.6464C7.86269 16.6464 7.85613 14.9489 7.89032 14.548H9.18925C9.18235 14.8336 9.24399 15.0493 9.37383 15.1883C9.50367 15.3656 9.70206 15.4276 9.94137 15.4276C10.3311 15.4276 10.5773 15.2656 10.5773 14.8258C10.5773 14.355 10.256 14.2702 9.94137 14.2702C9.74298 14.2702 9.64732 14.2935 9.54476 14.3091V13.2596C9.64732 13.2674 9.75679 13.2905 9.94137 13.2905C10.2287 13.2905 10.5909 13.2213 10.5909 12.8048C10.5909 12.4652 10.2491 12.334 9.96882 12.334C9.5995 12.334 9.29872 12.5576 9.31236 13.0051L8.02724 13.0049Z" fill="white"/>
+<path d="M14.0312 13.4909H12.9166V12.38C13.6071 12.3956 14.291 12.1026 14.3318 11.2151H15.4532V16.5847H14.0312V13.4909Z" fill="white"/>
+</svg>
+</span>
+            </span>
+        </label>
+        <label class="form-top__label _calendar-label">
+            <span class="form-top__label-text">выезд</span>
+            <span class="form-top__label-wrapper">
+                <input type="text" class="form-top__label-input _input _calendar" placeholder="22.10.2023">
+                <span class="form-top__icon _icon _icon-black"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.6489 3.95483H17.3156V3.02142C17.3156 2.46631 16.8613 2.01221 16.3062 2.01221C15.7511 2.01221 15.2972 2.46631 15.2972 3.02142V3.95483H8.70321V3.02142C8.70321 2.46631 8.24911 2.01221 7.694 2.01221C7.13889 2.01221 6.68479 2.46631 6.68479 3.02142V3.95483H4.35144C3.3961 3.95483 2.61877 4.73198 2.61877 5.68731V18.4854C2.61877 19.4407 3.39593 20.2178 4.35144 20.2178H18.1008C19.91 20.2178 21.3814 18.7464 21.3814 16.9373V5.68731C21.3814 4.73198 20.6043 3.95483 19.6489 3.95483ZM4.35144 5.33612H6.686C6.69929 5.87983 7.14718 6.32064 7.694 6.32064C8.24064 6.32064 8.68836 5.87983 8.70182 5.33612H15.2984C15.3118 5.87983 15.7594 6.32064 16.3062 6.32064C16.853 6.32064 17.3009 5.87983 17.3144 5.33612H19.6489C19.8396 5.33612 20.0001 5.49704 20.0001 5.68731V8.38498H4.00007V5.68731C4.00007 5.49687 4.16099 5.33612 4.35144 5.33612ZM4.00007 18.4854V9.7447H20.0001V15.7986H17.1776L17.1569 18.8366H4.35144C4.16099 18.8366 4.00007 18.6756 4.00007 18.4854ZM18.5387 18.7835L18.5498 17.1799H19.9827C19.8817 17.9669 19.2984 18.6033 18.5387 18.7835Z" fill="white"/>
+<path d="M8.02724 13.0049C8.03414 12.3721 8.25981 11.9094 8.62206 11.6009C8.98448 11.2999 9.47691 11.1533 10.0101 11.1533C11.3912 11.1533 11.8493 12.0793 11.8493 12.5343C11.8493 13.6607 11.2201 13.6607 11.2201 13.6839V13.6992C11.2201 13.761 11.9995 13.761 11.9995 14.9569C11.9995 15.6127 11.562 16.6464 10.003 16.6464C7.86269 16.6464 7.85613 14.9489 7.89032 14.548H9.18925C9.18235 14.8336 9.24399 15.0493 9.37383 15.1883C9.50367 15.3656 9.70206 15.4276 9.94137 15.4276C10.3311 15.4276 10.5773 15.2656 10.5773 14.8258C10.5773 14.355 10.256 14.2702 9.94137 14.2702C9.74298 14.2702 9.64732 14.2935 9.54476 14.3091V13.2596C9.64732 13.2674 9.75679 13.2905 9.94137 13.2905C10.2287 13.2905 10.5909 13.2213 10.5909 12.8048C10.5909 12.4652 10.2491 12.334 9.96882 12.334C9.5995 12.334 9.29872 12.5576 9.31236 13.0051L8.02724 13.0049Z" fill="white"/>
+<path d="M14.0312 13.4909H12.9166V12.38C13.6071 12.3956 14.291 12.1026 14.3318 11.2151H15.4532V16.5847H14.0312V13.4909Z" fill="white"/>
+</svg>
+</span>
+            </span>
+        </label>
+        <label class="form-top__label">
+            <span class="form-top__label-text">количество гостей</span>
+            <span class="form-top__label-wrapper">
+                <input type="text" class="form-top__label-input _input _select" placeholder="2 взрослых, 0 детей">
+                <span class="form-top__icon _icon-stroke"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#1A3A27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#1A3A27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+                <div class="custom-select custom-select--hidden">
+    <div class="custom-select__option" data-value="1">1 взрослый</div>
+    <div class="custom-select__option" data-value="2">2 взрослых</div>
+    <div class="custom-select__option" data-value="3">3 взрослых</div>
+    <div class="custom-select__option" data-value="4">4 взрослых</div>
+    <div class="custom-select__option" data-value="5">5 взрослых</div>
+</div>
+            </span>
+        </label>
+        <button type="submit" class="form-top__button _btn _btn-dark _btn-normal">ЗAБРОНИРОВАТЬ</button>
+    </form>
+</div>
+
+<div id="form-bottom" class="form-bottom__inner">
+    <h2 class="form-bottom__title _title-3">Забронировать домик</h2>
+    <form action="#" class="form-bottom__form">
+        <label class="form-bottom__label">
+            <input type="text" class="_input _input-large" placeholder="Как вас зовут?">
+        </label>
+        <label class="form-bottom__label">
+            <input type="tel" class="_input _input-large" placeholder="+7 (999) 999 99 99">
+        </label>
+        <button type="submit" class="form-bottom__button _btn _btn-normal _btn-primary">Забронировать</button>
+        <span class="form-bottom__privaty">Оставляя заявку Вы принимаете условия <br> <a href="#!">соглашения</a> об обработке персональных данных</span>
+    </form>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=8717ecc3-c754-4e2a-ab96-e5e519ae0e57&lang=ru_RU"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
