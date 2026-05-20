@@ -12,63 +12,39 @@
 
 
 @import 'blocks/header';
-@import 'blocks/menu';
-@import 'blocks/front-block-home';
-@import 'blocks/auto-swiper';
-@import 'blocks/advantage';
-@import 'blocks/diagnostics';
-@import 'blocks/directions';
-@import 'blocks/current-promotions';
-@import 'blocks/video';
-@import 'blocks/doctors';
-@import 'blocks/video-reviews';
+@import 'blocks/burger';
+@import 'blocks/top';
+@import 'blocks/swiper';
+@import 'blocks/form-top';
+@import 'blocks/swipe';
+@import 'blocks/calendar';
+@import 'blocks/guest-selector';
+@import 'blocks/houses';
+@import 'blocks/rent';
+@import 'blocks/tabs';
+@import 'blocks/accordion';
+@import 'blocks/stock';
+@import 'blocks/infrastructure';
+@import 'blocks/about';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/form-bottom';
 @import 'blocks/reviews';
-@import 'blocks/place';
-@import 'blocks/reception';
-@import 'blocks/map-block';
-@import 'blocks/signboard';
+@import 'blocks/breadcrumbs';
+@import 'blocks/numbers-top';
+@import 'blocks/price';
+@import 'blocks/facilities';
+@import 'blocks/about-alternative';
+@import 'blocks/services-swiper';
+@import 'blocks/about-us-top';
+@import 'blocks/about-us-desc';
+@import 'blocks/play';
+@import 'blocks/services-houses';
+@import 'blocks/contacts';
+@import 'blocks/map';
+@import 'blocks/route';
+@import 'blocks/service-top';
 @import 'blocks/footer';
-@import 'blocks/front-block-services';
-@import 'blocks/services';
-@import 'blocks/front-block-service';
-@import 'blocks/nav-to-page';
-@import 'blocks/service-info';
-@import 'blocks/consult-form';
-@import 'blocks/what-is';
-@import 'blocks/symptoms';
-@import 'blocks/quotation';
-@import 'blocks/service-cards';
-@import 'blocks/procedure-underway';
-@import 'blocks/world-implants';
-@import 'blocks/result';
-@import 'blocks/team';
-@import 'blocks/new-level';
-@import 'blocks/price-form';
-@import 'blocks/front-block-doctors';
-@import 'blocks/front-block-doctor';
-@import 'blocks/doctors-about';
-@import 'blocks/doctors-directions';
-@import 'blocks/front-block-blogs';
-@import 'blocks/blog-posts';
-@import 'blocks/pages-links';
-@import 'blocks/front-block-blog';
-@import 'blocks/content-block';
-.promotion-name{
-  padding-top: var(--indent);
-}
-@import 'blocks/front-block-promotion';
-@import 'blocks/qualification';
-@import 'blocks/front-block-portfolio';
-@import 'blocks/direction-treatment';
-@import 'blocks/front-block-reviews';
-@import 'blocks/front-block-price';
-
-
-
-@import 'blocks/quiz';
-@import 'blocks/front-block-2';
-@import 'blocks/wait';
-@import 'blocks/modals';
 
 
 

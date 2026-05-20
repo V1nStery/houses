@@ -1,0 +1,119 @@
+
+.price__inner {
+    display: flex;
+    gap: 20px;
+
+    @include lg {
+        flex-direction: column;
+    }
+}
+.price__image {
+    aspect-ratio: 480 / 673;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 480px;
+    width: 100%;
+
+    @include lg {
+        max-width: inherit;
+        aspect-ratio: 718 / 626;
+    }
+
+    @include xs {
+        aspect-ratio: 288 / 405;
+    }
+}
+.price__text {
+    border-radius: 10px;
+    padding: 40px;
+    background: var(--gray-bg-2);
+    
+    @include xl {
+        padding: 20px;
+    }
+
+    @include md {
+        padding: 30px 20px;
+    }
+}
+.price__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include md {
+        gap: 30px;
+    }
+}
+.price__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.price__title {
+    font-weight: 400;
+    @include text-size(16,15);
+    line-height: 150%;
+}
+.price__wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &:has(.price__way) {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 47px;
+        background: #eee;
+        padding:  19px 29px;
+        border-radius: 10px;
+
+        @include sm {
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+    }
+}
+.price__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 150%;
+    border-radius: 30px;
+    padding: 5px 16px;
+    background: #eee;
+    @include text-size(18,15);
+}
+.price__way {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.price__way-icon {
+    width: 28px;
+    height: 28px;
+}
+.price__way-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+}
+.price__buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+
+    @include md {
+        margin-top: 30px;
+    }
+}
+.price__button {
+
+    @include md {
+        max-width: inherit;
+        width: 100%;
+    }
+}

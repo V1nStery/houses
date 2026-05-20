@@ -1,92 +1,87 @@
-new Swiper(".auto-swiper__inner", {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 15,
-  initialSlide: 3,
-  centeredSlides: true,
-  mousewheel: {
-    enabled: true,
-    eventsTarget: ".auto-swiper__inner", // или 'container'
-    forceToAxis: true, // только горизонтальная прокрутка
-  },
-  touchEventsTarget: "container",
-  autoplay: {
-    delay: 2000,
-  },
-  breakpoints: {
-    540: {
-      slidesPerView: 3,
-    },
-    750: {
-      slidesPerView: 4,
-    },
-  },
-});
-new Swiper(".reviews__swiper", {
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 15,
-  navigation: {
-  nextEl: ".reviews__swiper-wrapper .swiper-button-next",
-  prevEl: ".reviews__swiper-wrapper .swiper-button-prev",
-},
-  mousewheel: {
-    enabled: true,
-    eventsTarget: ".reviews__swiper", // или 'container'
-    forceToAxis: true, // только горизонтальная прокрутка
-  },
-  touchEventsTarget: "container",
-  breakpoints: {
-    1230: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    767.98: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-  },
-});
-new Swiper(".team__swiper", {
-  slidesPerView: 1,
-  spaceBetween: 15,
-  navigation: {
-  nextEl: ".team__wrapper .swiper-button-next",
-  prevEl: ".team__wrapper .swiper-button-prev",
-},
-  mousewheel: {
-    enabled: true,
-    eventsTarget: ".team__swiper", // или 'container'
-    forceToAxis: true, // только горизонтальная прокрутка
-  },
-  touchEventsTarget: "container",
-    breakpoints: {
-    575.98: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-    991.8: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
+document.addEventListener("DOMContentLoaded", function () {
+    const swiperTop = new Swiper(
+    ".top__swiper.swiper,.rent__swiper.swiper,.about__swiper.swiper,.numbers-top__swiper.swiper, .about-us-desc__swiper.swiper",
+    {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 3000,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        },
+    );
+
+  // Проверяем, что swiperTop создан и у него есть autoplay
+    if (swiperTop && swiperTop.autoplay) {
+        const swiperContainers = document.querySelectorAll(
+        ".top__swiper.swiper, .rent__swiper.swiper, .about__swiper.swiper, .about-us-desc__swiper.swiper",
+        );
+        swiperContainers.forEach((container) => {
+        if (container) {
+            container.addEventListener("mouseenter", () =>
+            swiperTop.autoplay.stop(),
+            );
+            container.addEventListener("mouseleave", () =>
+            swiperTop.autoplay.start(),
+            );
+        }
+        });
+    } else {
+        console.warn(
+        "SwiperTop не инициализирован или autoplay недоступен. Проверьте селекторы.",
+        );
     }
-});
-new Swiper(".technological-approach__swiper", {
-  loop: false,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".technological-approach__swiper-wrapper .swiper-button-next",
-    prevEl: ".technological-approach__swiper-wrapper .swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    575.98: {
-      slidesPerView: "auto",
-      spaceBetween: 20,
-    },
-  },
+
+  // Остальные инициализации Swiper...
+    const swiperHouses = new Swiper(".houses__swiper.swiper", {
+        slidesPerView: 3,
+        spaceBetween: 21,
+        speed: 1000,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        991: {
+            spaceBetween: 21,
+        },
+        320: {
+            spaceBetween: 10,
+        },
+        },
+    });
+
+    const swiperMd = new Swiper(
+        ".md-swiper.swiper,.infrastructure__swiper.md-swiper.swiper,.reviews__swiper.md-swiper.swiper,.services-swiper__swiper.md-swiper.swiper,.services-houses__swiper.md-swiper.swiper",
+        {
+        slidesPerView: "auto",
+        speed: 1000,
+        spaceBetween: 20,
+        navigation: {
+            nextEl:
+            ".infrastructure__swiper-button-next,.reviews__swiper-button-next,.services-swiper__swiper-button-next,.services-houses__swiper-button-next.swiper-button-next",
+            prevEl:
+            ".infrastructure__swiper-button-prev,.reviews__swiper-button-prev,.services-swiper__swiper-button-prev,.services-houses__swiper-button-prev.swiper-button-prev",
+        },
+        breakpoints: {
+            991: {
+            spaceBetween: 20,
+            },
+            320: {
+            spaceBetween: 10,
+            loop: true,
+            },
+        },
+        },
+    );
 });

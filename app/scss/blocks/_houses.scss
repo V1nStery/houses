@@ -1,0 +1,125 @@
+.houses {
+    overflow-x: hidden;
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60px;
+    }
+
+    &__swiper {
+        margin-top: 40px;
+
+
+        @include md {
+            display: none;
+        }
+    }
+
+    &__swiper-slide {
+        gap: 21px;
+        max-width: 380px;
+        width: 100%;
+
+        &:nth-child(odd) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+
+            @include lg {
+                gap: 10px;
+            }
+        }
+
+        &:nth-child(even) {
+            aspect-ratio: 379 / 520;
+        }
+
+        @include lg {
+            gap: 11px;
+        }
+    }
+
+    
+    &__right-img,&__left-img {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__left-img {
+
+        &:nth-child(1) {
+            grid-column: span 2;
+            aspect-ratio: 180 / 250;
+        }
+
+        &:nth-child(2) {
+            grid-column: span 2;
+            aspect-ratio: 180 / 250;
+        }
+
+        &:nth-child(3) {
+            grid-column: span 4;
+            aspect-ratio: 380 / 250;
+        }
+    }
+
+    &__right-img {
+
+        &:nth-child(1) {
+            grid-column: span 4;
+            aspect-ratio: 380 / 250;
+        }
+        &:nth-child(2) {
+            grid-column: span 2;
+            aspect-ratio: 180 / 250;
+        }
+
+        &:nth-child(3) {
+            grid-column: span 2;
+            aspect-ratio: 180 / 250;
+        }
+
+    }
+
+    &__swiper-button {
+        position: relative;
+
+        @include md {
+            display: none;
+        }
+    }
+
+    &__swiper-button-next {
+        top: -5px;
+        right: 0;
+    }
+
+    &__swiper-button-prev {
+        top: -5px;
+        left: -125px;
+    }
+
+    &__md-swiper {
+        display: none;
+        margin-top: 20px;
+    
+        @include md {
+            display: flex;
+            position: relative;
+            z-index: 5;
+            width: 1000px;
+            height: 320px;
+        }
+    }
+
+    &__md-swiper-slide {
+        width: 278px;
+        height: 320px;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+}

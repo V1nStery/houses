@@ -1,139 +1,39 @@
-._title {
-  font-family: var(--font-default);
-  font-weight: 400;
-  font-size: 58px;
-  line-height: calc(72 / 58 * 100%);
-  color: var(--default-color);
-  margin-bottom: 50px;
-
-  span {
-    color: var(--blue-color);
-    font-weight: 500;
-  }
-
-  @include xl {
-    font-size: 50px;
-    margin-bottom: 40px;
-  }
-
-  @include lg {
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
-
-  @include md {
-    font-size: 34px;
-    margin-bottom: 25px;
-
-    br {
-      display: none;
-    }
-  }
-
-  @include sm {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
+._title-1 {
+  @include text-size(48,36);
+  font-weight: 600;
+  line-height: calc(61.6 / 56 * 100%);
+  text-align: center;
+  color: var(--light-color);
 }
 
 ._title-2 {
-  font-family: var(--font-default);
-  font-weight: 500;
-  font-size: 44px;
-  line-height: calc(52 / 44 * 100%);
-  color: var(--default-color);
-  text-align: center;
-  margin-bottom: 50px;
+  @include text-size(36,24);
+  line-height: calc(50.4 / 36 * 100% );
+  font-weight: 400;
+}
 
-  span {
-    color: var(--blue-color);
-  }
-
-  @include xl {
-    font-size: 40px;
-    margin-bottom: 40px;
-  }
-
-  @include lg {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-
-  @include md {
-    font-size: 30px;
-    margin-bottom: 25px;
-    br {
-      display: none;
-    }
-  }
-
-  @include sm {
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
+._title-3 {
+    font-family: 'Lato';
+    font-weight: 400;
+    @include text-size(28,20);
+    line-height: calc(39/28 * 100%);
 }
 
 ._subtitle {
-  font-family: var(--font-default);
-  font-weight: 400;
-  font-size: 28px;
-  line-height: calc(36 / 28 * 100%);
-  margin-top: 20px;
-
-  @include xl {
-      font-size: 26px;
-  }
-  @include lg {
-      font-size: 24px;
-  }
-
-  @include md {
-    margin-top: 15px;
-
-    br {
-      display: none;
-    }
-  }
-
-  @include sm {
-    font-size: 22px;
-    margin-top: 10px;
-  }
-
-  @include xs {
-    font-size: 20px;
-  }
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(24/18 * 100%);
+  color: var(--primary);
 }
-._subtitle-1 {
-  font-family: var(--font-default);
-  text-align: center;
-  font-weight: 400;
+
+._subtitle-2 {
+  font-weight: 500;
   font-size: 24px;
-  line-height: calc(32 / 24 * 100%);
-  margin: 15px 0 50px;
-
-  @include xl {
-    margin-bottom: 40px;
-  }
-
-  @include lg {
-    margin-bottom: 30px;
-  }
+  line-height: calc(28/24 * 100%);
+  color: var(--gray-color);
 
   @include md {
-    margin-bottom: 25px;
-
-    br {
-      display: none;
-    }
-  }
-
-  @include sm {
-    font-size: 22px;
-    margin: 10px 0 15px;
-  }
-
-  @include xs {
-    font-size: 20px;
+      font-size: 18px;
   }
 }
+

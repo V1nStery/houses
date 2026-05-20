@@ -1,28 +1,56 @@
 @font-face {
-  font-family: "Onest";
+  font-family: "Unbounded";
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Onest-Regular.woff2") format("woff2"), url("../fonts/Onest-Regular.woff") format("woff");
+  src: url("../fonts/Unbounded-Regular.woff2") format("woff2"), url("../fonts/Unbounded-Regular.woff") format("woff");
   font-style: normal;
 }
 @font-face {
-  font-family: "Onest";
+  font-family: "Lato";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/Onest-Medium.woff2") format("woff2"), url("../fonts/Onest-Medium.woff") format("woff");
+  src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
   font-style: normal;
 }
 @font-face {
-  font-family: "Onest";
+  font-family: "Unbounded";
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/Onest-SemiBold.woff2") format("woff2"), url("../fonts/Onest-SemiBold.woff") format("woff");
+  src: url("../fonts/Unbounded-SemiBold.woff2") format("woff2"), url("../fonts/Unbounded-SemiBold.woff") format("woff");
   font-style: normal;
 }
 @font-face {
-  font-family: "Onest";
+  font-family: "Lato";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Lato-SemiBold.woff2") format("woff2"), url("../fonts/Lato-SemiBold.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/Onest-Bold.woff2") format("woff2"), url("../fonts/Onest-Bold.woff") format("woff");
+  src: url("../fonts/Unbounded-Bold.woff2") format("woff2"), url("../fonts/Unbounded-Bold.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Unbounded-ExtraBold.woff2") format("woff2"), url("../fonts/Unbounded-ExtraBold.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/Unbounded-Black.woff2") format("woff2"), url("../fonts/Unbounded-Black.woff") format("woff");
   font-style: normal;
 }

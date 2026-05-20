@@ -2,12 +2,13 @@
   // НЕЛЬЗЯ УДАЛЯТЬ ЭТИ ПЕРЕМЕННЫЕ
 
   // контейнер
-  --container-width: 1200px;
+  --container-width: 1180px;
   --container-lg-width: 1600px;
-  --container-padding: 15px;
+  --container-padding: 16px;
 
   // шрифты
-  --font-default: 'Onest';
+  --font-default: 'Unbounded';
+  --font-family: 'Lato';
   --font-titles: var(--font-default);
 
   // размер шрифта
@@ -26,33 +27,34 @@
 
   // глобаьлные цвета
   --page-bg: #FFFFFF;
-  --default-color: #252A36;
-  --link-color: #252A36;
+  --default-color: #1A3A27;
+  --link-color: rgba(0, 0, 0, 0.7);
 
 
   // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
 
-  --primary: #4487FF;
-  --accent: #7BC486;
+  --primary: #3B9254;
+  --primary-hover: #4EA366;
+  --primary-active: #2A7941;
+  --secondary: #EAF5ED;
+  --disabled-bg: #C9DACE;
+  --disabled-color: #859F8D;
+  --accent: #EF476F;
   --light-color: #FFFFFF;
-  --light-transparent-color: rgba(255, 255, 255, 0.75);
-  --whatsapp-color: #25D366;
-  --whatsapp-hover: #2DE873;
-  --telegram-color: #35A9E5;
-  --telegram-hover: #54C0F8;
-  --gray-color: #FAFBFC;
-  --blue-color: #4A6196;
-  --light-gray-color: #FAFAFA;
-  --transition: all .3s ease-in-out;
-  --black-transparent-color: rgba(0, 0, 0, 0.1);
-  --gray-light-color: #F3F3F4;
-  
-  --form-shadow: 0px 20px 55px 0px rgba(163, 169, 183, 0.15);
-  
-  
-  --primary-hover: #1865f5;
   --accent-hover: #5dcd6e;
-  
+  --dark-color: #232120;
+  --black-color: #000000;
+  --input-border-color: #EEEEEE;
+  --input-placeholder-color: #949895;
+  --light-gray-color: #C5E1CD;
+  --gray-color: #FFFF;
+  --gray-accent: #515753;
+  --gray-accent-2: #f8f8f8;
+  --gray-bg: #f6f6f6;
+  --gray-bg-2: #f8f8f8;
+  --red-color: #FF564E;
+  --beige-color: #F0E7D9;
+  --transition: all .4s;
 
   // Отступы для блоков
   --indent: 100px;

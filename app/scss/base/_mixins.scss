@@ -46,3 +46,7 @@
     }
   }
 }
+
+@mixin text-size($max: 64, $min: 16) {
+ font-size: clamp(#{$min}px, calc(#{$max} / 1440 * 100vw), #{$max}px);
+}

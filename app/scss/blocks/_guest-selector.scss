@@ -1,0 +1,30 @@
+.custom-select {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 60;
+    min-width: 283px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    font-family: 'Lato', sans-serif;
+
+    &--hidden {
+        display: none;
+    }
+
+    &__option {
+        padding: 10px 15px;
+        font-family: 'Lato';
+        cursor: pointer;
+        transition: background 0.2s;
+        font-size: 16px;
+        color: var(--black-color);
+        text-transform: uppercase;
+
+        @include hover {
+            background-color: var(--secondary);
+        }
+    }
+}

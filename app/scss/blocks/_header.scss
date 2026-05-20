@@ -1,119 +1,130 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
 
-  &__top {
-    padding: 20px 0;
-
-    @include lg {
-      padding: 10px 0;
-    }
-
-    .search-btn {
-      display: none;
-
-      @include lg {
-        position: absolute;
-        right: 25px;
+    &__inner {
         display: flex;
-      }
-    }
-  }
+        gap: 5px;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        max-width: 1180px;
 
-  &__top-inner {
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        z-index: 500;
+        margin: 0 auto;
+
+        @include xl {
+            max-width: 970px;
+            padding: 16px;
+        }
+
+        @include lg {
+            max-width: 750px;
+        }
+
+        @include md {
+            max-width: 540px;
+            padding: 0 16px;
+            height: 60px;
+        }
+    }
+
+
+    .fix {
+        height: 80px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        -webkit-box-shadow: 0px 16px 18px -10px rgba(59, 146, 84, 0.28);
+        -moz-box-shadow: 0px 16px 18px -10px rgba(59, 146, 84, 0.28);
+        box-shadow: 0px 16px 18px -10px rgba(59, 146, 84, 0.28);
+        
+
+        @include md {
+            height: 60px;
+            padding: 0 16px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include xl {
+            gap: 5px;
+        }
+    }
+
+    &__tel {
+
+        @include xl {
+            padding: 14.5px 5px;
+            font-size: 15px;
+        }
+
+        @include lg {
+            padding: 14.5px 16px;
+            font-size: 18px;
+        }
+
+        @include sm {
+            display: none;
+        }
+    }
+
+    &__button {
+        @include xl {
+            padding: 16px 10px;
+        }
+
+        @include lg {
+            padding: 10px 30px;
+            min-height: 42px;
+        }
+
+        @include md {
+            display: none;
+        }
+    }
+}
+
+.nav {
     display: flex;
+    gap: 39px;
     align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    position: relative;
-  }
-
-  .logo {
-    @include lg {
-      max-width: 84px;
-    }
-
-    @include xs {
-      max-width: 70px;
-    }
-    &__text {
-      @include lg {
-        display: none;
-      }
-    }
-  }
-
-  .geo {
-    @include md {
-      display: none;
-    }
-  }
-  .social-block {
-    @include sm {
-      display: none;
-    }
-  }
-
-  .social-block {
-    &__text {
-      @include lg {
-        display: none;
-      }
-    }
-  }
-
-  &__right {
-    display: flex;
-    align-items: center;
-    gap: 50px;
 
     @include xl {
-      gap: 20px;
+        gap: 10px;
     }
-  }
 
-  &__bottom {
-    @include lg {
-      display: none;
+    &__menu {
+        display: flex;
+        gap: 5px;
+
+        @include xl {
+            gap: 0;
+        }
+
+        @include lg {
+            display: none;
+        }
     }
-  }
 
-  &__bottom-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background-color: var(--light-color);
-    box-shadow: 0px 765px 250px rgba(217, 217, 217, 0.01),
-      0px 431px 250px rgba(217, 217, 217, 0.05),
-      0px 191px 191px rgba(217, 217, 217, 0.09),
-      0px 48px 105px rgba(217, 217, 217, 0.1);
-    border-radius: 5px;
-    padding: 8px 15px;
+    &__link {
 
-    @include xl {
-      gap: 20px;
+
+
+        @include xl {
+            padding: 14.5px 8px;
+            font-size: 17px;
+        }
     }
-  }
-
-  &__bottom-btn {
-    min-width: 35px;
-    min-height: 35px;
-    width: 35px;
-    height: 35px;
-    background-color: var(--accent);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    &:hover {
-      scale: 1.1;
-      background-color: var(--accent-hover);
-    }
-  }
 }

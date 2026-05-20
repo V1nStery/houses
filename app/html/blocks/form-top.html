@@ -1,0 +1,32 @@
+<section class="form-top _section-1">
+    <div class="container">
+        <div class="form-top__inner _section-1">
+            <h3 class="form-top__title">Забронировать домик</h3>
+            <form class="form-top__form">
+                <label class="form-top__label _calendar-label">
+                    <span class="form-top__label-text">Заезд</span>
+                    <span class="form-top__label-wrapper">
+                        <input type="text" class="form-top__label-input _input _calendar" placeholder="22.10.2023">
+                        <span class="form-top__icon _icon-black _icon">@@include('../../images/icons/calendar.svg')</span>
+                    </span>
+                </label>
+                <label class="form-top__label _calendar-label">
+                    <span class="form-top__label-text">выезд</span>
+                    <span class="form-top__label-wrapper">
+                        <input type="text" class="form-top__label-input _input _calendar" placeholder="22.10.2023">
+                        <span class="form-top__icon _icon _icon-black">@@include('../../images/icons/calendar.svg')</span>
+                    </span>
+                </label>
+                <label class="form-top__label">
+                    <span class="form-top__label-text">количество гостей</span>
+                    <span class="form-top__label-wrapper">
+                        <input type="text" class="form-top__label-input _input _select" placeholder="2 взрослых, 0 детей">
+                        <span class="form-top__icon _icon-stroke">@@include('../../images/icons/user.svg')</span>
+                        @@include('../components/quest-selector.html')
+                    </span>
+                </label>
+                <button type="submit" class="form-top__button _btn _btn-dark _btn-normal">ЗAБРОНИРОВАТЬ</button>
+            </form>
+        </div>
+    </div>
+</section>

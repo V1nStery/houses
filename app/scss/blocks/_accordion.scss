@@ -1,0 +1,91 @@
+.accordion {
+    display: none;
+    margin-top: 30px;
+
+    @include md {
+        display: block;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: space-between;
+        border: none;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-size: contain;
+            transition: transform 1s;
+        }
+
+        &.active::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 2s ease-out;
+        overflow: hidden;
+
+        // Добавляем отступы только когда открыто
+        &.active {
+            grid-template-rows: 1fr;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__inner {
+        min-height: 0; // важно для grid-анимации
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 2s ease-out, visibility 2s ease-out;
+    }
+
+    &__content.active &__inner {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s; // ждём окончания раскрытия высоты
+    }
+
+    // Дополнительно — анимация для карточек (лёгкое смещение)
+    .tabs__card {
+        transform: translateY(0);
+        transition: transform 5s ease, opacity 0.5s ease;
+    }
+
+    &__content.active .tabs__card {
+        animation: cardFadeIn 3s ease forwards;
+    }
+}
+
+@keyframes cardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

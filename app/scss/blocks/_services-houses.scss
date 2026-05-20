@@ -1,0 +1,46 @@
+.services-houses {
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    @include md {
+        padding-bottom: 40px;
+    }
+}
+.services-houses__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+}
+.services-houses__swiper-button {
+    position: relative;
+    
+        @include md {
+            display: none;
+        }
+}
+.services-houses__swiper-button-next {
+    top: -5px;
+    right: 0;
+}
+.services-houses__swiper-button-prev {
+    top: -5px;
+    left: -125px;
+}
+.services-houses__swiper {
+    position: relative;
+    margin-top: 40px;
+    
+    @include md {
+        width: 1000px;
+        margin-top: 20px;
+    }
+}
+.services-houses__swiper-slide {
+    border-radius: 10px;
+    width: 380px;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}

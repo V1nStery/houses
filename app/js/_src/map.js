@@ -1,78 +1,87 @@
-// map
-function lazyLoadMap() {
-  // Проверяем, есть ли элемент с id "map" на странице
-  var mapElement = document.getElementById("map");
-  if (mapElement) {
-    // Создаем экземпляр Intersection Observer
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
+// Функция для определения зума в зависимости от ширины
+function getZoomByWidth(width) {
+  const defaultZoom = 13.45;
+  const smallWidthThreshold = 465;
+  if (width <= smallWidthThreshold) {
+    return defaultZoom - 1; // 12.45
+  }
+  return defaultZoom;
+}
+
+function initMap() {
+  if (typeof ymaps === "undefined") return;
+
+  const mapContainer = document.getElementById("map");
+  if (!mapContainer) return;
+
+  const containerWidth = mapContainer.clientWidth;
+  const zoom = getZoomByWidth(containerWidth);
+
+  var myMap = new ymaps.Map("map", {
+    center: [55.685123, 48.478],
+    zoom: zoom,
+    controls: ["zoomControl"],
+  });
+
+  myMap.behaviors.disable("scrollZoom");
+
+  var myPolygon = new ymaps.Polygon(
+    [
+      [
+        [55.6835, 48.498],
+        [55.6845, 48.503],
+        [55.682, 48.508],
+        [55.678, 48.508],
+        [55.6765, 48.505],
+        [55.677, 48.498],
+        [55.68, 48.496],
+      ],
+    ],
+    {},
+    {
+      fillColor: "#EEE2D5",
+      strokeColor: "#DF9A90",
+      opacity: 0.6,
+      strokeWidth: 2,
+    },
+  );
+
+  var myPlacemark = new ymaps.Placemark(
+    [55.681123, 48.501147],
+    { iconCaption: "село Бритвино" },
+    { preset: "islands#redDotIconWithCaption" },
+  );
+
+  myMap.geoObjects.add(myPolygon);
+  myMap.geoObjects.add(myPlacemark);
+
+  // Опционально: обновлять зум при изменении ширины окна
+  let resizeTimeout;
+  window.addEventListener("resize", function () {
+    if (resizeTimeout) clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+      const newWidth = mapContainer.clientWidth;
+      const newZoom = getZoomByWidth(newWidth);
+      if (myMap.getZoom() !== newZoom) {
+        myMap.setZoom(newZoom);
+      }
+    }, 200);
+  });
+}
+
+// Механизм LazyLoad
+const mapElement = document.getElementById("map");
+if (mapElement) {
+  const mapObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Когда элемент видим на экране, загружаем API Яндекс карты асинхронно
-          var script = document.createElement("script");
-          script.src =
-            "https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0333b546-e4cd-4422-b583-f1193f0144a4&_v=20240321151130";
-          script.async = true;
-          script.onload = function () {
-            // Когда скрипт загружен, вызываем функцию инициализации карты
-            ymaps.ready(initializeMap);
-          };
-          document.body.appendChild(script);
-          // Отключаем наблюдение за элементом, чтобы не загружать карту повторно при последующих доскроллах
-          observer.unobserve(mapElement);
+          ymaps.ready(initMap);
+          mapObserver.unobserve(mapElement);
         }
       });
-    });
-
-    // Начинаем наблюдение за элементом
-    observer.observe(mapElement);
-  }
+    },
+    { rootMargin: "0px 0px 200px 0px" },
+  );
+  mapObserver.observe(mapElement);
 }
-
-function initializeMap() {
-  var mapElement = document.getElementById("map");
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map(
-      mapElement,
-      {
-        center: [55.738256, 37.659642],
-        zoom: 16,
-      },
-      {
-        searchControlProvider: "yandex#search",
-      }
-    );
-
-    var destinations = {
-      "г. Москва, ул. Марксистская, д.20, стр.1": [55.738256, 37.659642],
-    };
-
-    var myPlacemark = new ymaps.Placemark(
-      destinations["г. Москва, ул. Марксистская, д.20, стр.1"],
-      {
-        hintContent: "Офис",
-        balloonContent: "г. Москва, ул. Марксистская, д.20, стр.1",
-      },
-      {
-        iconLayout: "default#image",
-        iconImageSize: [30, 35],
-        iconImageOffset: [-5, -38],
-      }
-    );
-
-    myMap.geoObjects.add(myPlacemark);
-    myMap.behaviors.disable("scrollZoom");
-
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      myMap.behaviors.disable("drag");
-    }
-  });
-  // Ваш код инициализации карты здесь
-}
-
-document.addEventListener("DOMContentLoaded", lazyLoadMap);
-
-

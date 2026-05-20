@@ -1,0 +1,128 @@
+// Мобильное меню
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: right 0.4s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    color: var(--color-dark);
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    &__top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__top-text {
+        font-size: 28px;
+        line-height: calc(39.2 / 28 * 100%);
+    }
+
+    &__close {
+        cursor: pointer;
+    }
+
+    &__bar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    &.active {
+        right: 0;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    &__contacts {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Оверлей
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 58, 39,0.7);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 999;
+    border: none;
+
+    @include lg {
+        display: flex;
+    }
+
+
+    span {
+        display: block;
+        border-radius: 1px;
+        height: 2px;
+        width: 24px;
+        background-color: var(--light-color);
+        transition: all 0.3s ease;
+    }
+
+    &.active {
+        span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 8px);
+        }
+        span:nth-child(2) {
+            opacity: 0;
+        }
+        span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -7px);
+        }
+    }
+    
+}

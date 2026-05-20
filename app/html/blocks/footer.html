@@ -1,127 +1,83 @@
-<footer class="footer">
+<footer class="footer _section-1">
   <div class="container">
-    <div class="footer__top">
-      <div class="footer__top-menu">
-        <ul class="footer__menu">
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Услуги
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-  Цены
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Акции
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-  Врачи 
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Портфолио
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-  Отзывы  
-            </a>
-          </li>
-        </ul>
-        <ul class="footer__menu">
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              О стоматологии
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Блог
-            </a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">
-              Контакты
-            </a>
-          </li>
-          <li class="footer__menu-item footer__item-docs">
-            <h4 class="footer__docs">Документация</h4>
-            <div class="footer__docs-lists">
-              <ul class="footer__docs-list">
-                <li class="footer__docs-item">
-                  <a class="footer__docs-link" href="#">
-                    Лицензии и сертификаты
-                  </a>
-                </li>
-                <li class="footer__docs-item">
-                  <a class="footer__docs-link" href="#">
-                    Контакты контролирующих органов
-                  </a>
-                </li>
-                <li class="footer__docs-item">
-                  <a class="footer__docs-link" href="#">
-                    Правовые документы
-                  </a>
-                </li>
-              </ul>
-              <ul class="footer__docs-list">
-                <li class="footer__docs-item">
-                  <a class="footer__docs-link" href="#">
-                    Информация о медицинских работниках
-                  </a>
-                </li>
-                <li class="footer__docs-item">
-                  <a class="footer__docs-link" href="#">
-                    Политика конфиденциальности
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__right">
-        <div class="footer__right-top">
-          @@include('../components/social-block.html')
-          @@include('../components/phone-block.html')
-        </div>
-        <div class="footer__right-btns">
-          @@include('../components/geo.html')
-          <a class="footer__right-link _main-btn" href="#callback" data-fancybox>
-            Записаться
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <div class="logo">
+          <a href="/" class="logo">
+            <img src="images/logo.webp" alt="" class="logo-img">
           </a>
         </div>
+        <div class="footer__item">
+          <p class="footer__name">Карта сайта</p>
+          <ul class="footer__pages">
+            <li class="footer__nav-item">
+              <a href="/" class="footer__nav-link _link" target="_blank">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="/numbers.html" class="footer__nav-link _link" target="_blank">Номера</a>
+            </li>
+            <li class="nav__item">
+              <a href="/services-page.html" class="footer__nav-link _link" target="_blank">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="/about-us.html" class="footer__nav-link _link" target="_blank">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contacts-page.html" class="footer__nav-link _link" target="_blank">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p class="footer__name">Администрация Bri Village</p>
+          <ul class="footer__list">
+            <li class="footer__nav-item">
+              <span class="footer__nav-item-title"><span>@@include('../../images/icons/map.svg')</span>Адрес BriVillage</span>
+              <a href="#!" class="footer__nav-item--title-desc _link">c.Бритвино, Зеленодольский район, Республика Татарстан</a>
+            </li>
+            <li class="footer__nav-item">
+              <span class="footer__nav-item-title"><span>@@include('../../images/icons/tel-1.svg')</span>Телефон для связи</span>
+              <a href="tel:+79953831616" class="nav-item__desc _link">+7 995 383 16 16</a>
+            </li>
+            <li class="footer__nav-item">
+              <span class="footer__nav-item-title"><span>@@include('../../images/icons/mail.svg')</span>Email для связи</span>
+              <a href="mailto:bri.village@mail.ru" class="nav-item__desc _link">bri.village@mail.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p class="footer__name">Социальные сети</p>
+          <ul class="footer__links">
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span>@@include('../../images/icons/telegram.svg')</span>Telegram</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span>@@include('../../images/icons/whatsapp.svg')</span>Whatsapp</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span>@@include('../../images/icons/vk.svg')</span>VK</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#!" class="footer__nav-item-title _link" target="_blank"><span>@@include('../../images/icons/instagram.svg')</span>Instagram *</a>
+              <p class="footer__nav-item-text">* Запрещенная на территории Российской Федерации организация</p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__copypaste">
+        <p class="footer__copypaste-text">© BriVillage 2023. Все права защищены. Любое копирование информации <br>возможно только с согласия правообладателя ресурса.</p>
+        <div class="footer__copypaste-links">
+          <a href="#!" target="_blank">Договор оферты</a>
+          <a href="#!" target="_blank">Политика конфиденциальности</a>
+        </div>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <a class="logo footer__logo" href="/">
-        @@include('../../images/icons/logo.svg')
-        <p class="logo__text">
-          Московский центр<br>
-          имплантации и протезирования
-        </p>
-      </a>
-      <a class="footer__tfa" href="#" target="_blank">
-        @@include('../../images/icons/tfa.svg')
-        <span>Разработка сайта</span>
-      </a>
     </div>
   </div>
 </footer>
 
-</div>
-@@include('modals.html')
+@@include('../blocks/modals.html')
 
-
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=8717ecc3-c754-4e2a-ab96-e5e519ae0e57&lang=ru_RU"></script>
 <script src="js/main.min.js"></script>
-
 </body>
 
 </html>

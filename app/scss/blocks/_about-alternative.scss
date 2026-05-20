@@ -1,0 +1,31 @@
+
+.about-alternative__inner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+    @include lg {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.about-alternative__title {
+
+    @include lg {
+        br {
+            display: none;
+        }
+    }
+}
+.about-alternative__image {
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include lg {
+        order: -1;
+        aspect-ratio: 718 / 474;
+    }
+
+    @include xs {
+        aspect-ratio: 288 / 200;
+    }
+}

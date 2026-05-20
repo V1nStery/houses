@@ -1,0 +1,55 @@
+.about-us-top {
+    margin-top: 20px;
+}
+.about-us-top__inner {
+    background-image: url('../images/about-us-top-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+
+    @include md {
+        min-height: 200px;
+    }
+
+    .breadcrumbs {
+        margin-top: 50px;
+        margin-bottom: 0;
+
+        @include md {
+            margin-top: 20px;
+        }
+
+        &__item {
+    
+            .breadcrumbs__link {
+                color: rgba(255, 255, 255, 0.8);
+            }
+    
+            &:nth-child(1) {
+                .breadcrumbs__link {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 160%;
+                    color: var(--light-color);
+                }
+            }
+            
+        }
+    }
+
+}
+.about-us-top__title {
+    margin-top: 41px;
+    color: var(--light-color);
+    text-align: center;
+    @include md {
+        margin-top: 20px;
+    }
+}

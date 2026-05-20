@@ -1,0 +1,79 @@
+.swiper-button-prev,
+.swiper-button-next {
+    // Полностью отключаем стандартную иконку Swiper
+    &::after {
+        display: none; // или content: none;
+    }
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    span {
+        display: inline-flex;
+        line-height: 0;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.swiper-button-prev {
+    left: 22px;
+}
+.swiper-button-next {
+    right: 22px;
+}
+
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 25px;
+    bottom: 40px;
+    left: 50%;
+    
+}
+
+// Точки-полоски
+.swiper-pagination-bullet {
+    width: 25px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 4px;
+    transition: all 0.3s;
+    opacity: 1; // убираем прозрачность по умолчанию
+    position: relative;
+    z-index: 100;
+}
+
+// Активная полоска
+.swiper-pagination-bullet-active {
+    width: 40px;
+    background-color: var(--light-color, #fff);
+}
+
+// Убираем ограничение ширины контейнера (важно!)
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: auto;
+    left: 0;
+    right: 0;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+    background-color: var(--disabled-bg);
+    color: var(--disabled-color);
+
+    path {
+        stroke: var(--disabled-color);
+    }
+}
+
+
+
+
+
+
+

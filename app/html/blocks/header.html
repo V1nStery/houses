@@ -4,135 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <meta content="images/social.png" property="og:image" />
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon" />
+    <meta content="images/logo.webp" property="og:image" />
     <title>Главная страница</title>
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
 
   <body>
-    <div class="body_wrapper">
-      <header class="header">
-        <div class="header__top">
-          <div class="container">
-            <div class="header__top-inner">
-              <a class="logo header__logo" href="/">
-                @@include('../../images/icons/logo.svg')
-                <p class="logo__text">
-                  Московский центр<br />
-                  имплантации<br />
-                  и протезирования
-                </p>
-              </a>
-              @@include('../components/geo.html', {"class": "header__geo"})
-              <div class="header__right">
-                @@include('../components/social-block.html', {"class":
-                "header__social-block"})
-                @@include('../components/phone-block.html', {"class":
-                "header__phone"})
-                <div class="burger">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                </div>
-              </div>
+    <header class="header _section-1">
+        <div class="header__inner">
+          <a href="/" class="logo">
+            <img src="images/logo.webp" alt="" class="logo-img">
+          </a>
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav-item">
+                <a href="/" class="nav__link _link _link-padding">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="/numbers.html" class="nav__link _link _link-padding">Номера</a>
+              </li>
+              <li class="nav__item">
+                <a href="/services-page.html" class="nav__link _link _link-padding">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="/about-us.html" class="nav__link _link _link-padding">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="/contacts-page.html" class="nav__link _link _link-padding">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__contacts">
+              <a href="tel:+79953831616" class="header__tel _link _link-padding">@@include('../../images/icons/tel.svg') +7 995 383 16 16</a>
+              <a href="#form-top" data-fancybox class="header__button _btn _btn-primary _btn-normal">ЗАБРОНИРОВАТЬ</a>
             </div>
-            <button class="header__bottom-btn search-btn">
-              @@include('../../images/icons/search.svg')
-            </button>
-          </div>
-        </div>
-        <div class="header__bottom">
-          <div class="container">
-            <div class="header__bottom-inner">
-              <nav class="menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> Услуги </a>
-                    <ul class="submenu">
-                      <li class="submenu__item">
-                        <a class="submenu__link" href="#">Услуга</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> Цены </a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> Акции </a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> Врачи </a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> Портфолио </a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> Отзывы </a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link anchor" href="#"> О стоматологии </a>
-                  </li>
-                </ul>
-              </nav>
-              <button class="header__bottom-btn search-btn">
-                @@include('../../images/icons/search.svg')
-              </button>
+            <div class="burger _btn _btn-primary">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-          </div>
+          </nav>
         </div>
-      </header>
-      <form action="#" class="search-form">
-        <div class="container">
-          <div class="search-form__inner">
-            <input
-              class="search-form__inp _input"
-              type="text"
-              name="search"
-              placeholder="Поиск.."
-            />
-            <button class="search-form__btn _main-btn" type="submit">
-              Поиск
-            </button>
-          </div>
-        </div>
-      </form>
-      <div class="popup-menu">
-        <div class="burger popup-menu__burger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <nav class="popup-menu__nav">
-          <ul class="popup-menu__list">
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#key"> Услуги </a>
-              <ul class="popup-menu__submenu">
-                <li class="popup-menu__submenu-item">
-                  <a class="popup-menu__submenu-link" href="#">Услуга</a>
-                </li>
-              </ul>
-            </li>
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#objects"> Цены </a>
-            </li>
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#video-review"> Акции </a>
-            </li>
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#review"> Врачи </a>
-            </li>
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#service"> Портфолио </a>
-            </li>
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#guarantee"> Отзывы </a>
-            </li>
-            <li class="popup-menu__item">
-              <a class="popup-menu__link" href="#about">О стоматологии </a>
-            </li>
-          </ul>
-        </nav>
-        @@include('../components/geo.html')
-        @@include('../components/social-block.html')
-      </div>
+        @@include('../blocks/burger.html')
+    </header>

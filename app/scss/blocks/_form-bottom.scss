@@ -1,0 +1,84 @@
+
+.form-bottom__inner {
+    padding: 50px 60px;
+    background-color: var(--beige-color);
+    background-image: url('../images/form-bottom-bg.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+
+    @include md {
+        padding: 30px 20px;
+        background-image: none;
+    }
+
+}
+.form-bottom__title {
+    font-family: "Unbounded";
+}
+.form-bottom__form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    max-width: 692px;
+    align-items: center;
+    margin-top: 40px;
+
+    @include md {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.form-bottom__button {
+
+    @include md {
+        margin-top: 10px;
+    }
+}
+.form-bottom__privaty {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: calc(22/15 * 100%);
+    color: #948d82;
+
+    @include lg {
+        color: var(--default-color);
+    }
+
+    @include md {
+        color: #948d82;
+        margin-top: 5px;
+    }
+
+    a {
+        font-style: italic;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #948d82;
+        transition: var(--transition);
+
+        @include hover {
+            text-decoration: none;
+        }
+
+        @include lg {
+            color: var(--default-color);
+        }
+
+        @include md {
+            color: #948d82;
+        }
+    }
+}
+
+#form-bottom {
+    display: none;
+}
+
+#form-bottom.fancybox__content {
+    padding: 20px 30px !important;
+    max-width: 700px;
+    background-image: none;
+}

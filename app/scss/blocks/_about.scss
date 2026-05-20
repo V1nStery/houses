@@ -1,0 +1,65 @@
+
+.about__inner {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+    @include lg {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+.about__description {
+    font-family: "Lato";
+    font-weight: 400;
+    line-height: calc(27/18 * 100%);
+    color: var(--gray-accent);
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    p {
+        @include xl {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+.about__button {
+    margin-top: 30px;
+
+    @include sm {
+        max-width: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.about__swiper.swiper {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    aspect-ratio: 580 / 469;
+
+    @include lg {
+        order: -1;
+    }
+}
+.about__swiper-slide.swiper-slide {
+    max-width: 580px;
+    width: 100%;
+
+    @include lg {
+        max-width: inherit;
+    }
+}
+.swiper-button {
+
+    @include lg {
+        display: none;
+    }
+}
